@@ -1,8 +1,6 @@
-package com.ma.idea;
-
 import java.util.Scanner;
 
-public class Converter {
+public class Task_6_Converter {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
