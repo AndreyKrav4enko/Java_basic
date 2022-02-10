@@ -29,6 +29,8 @@ public class Task_5_Calculator {
                 double d = x * y;
                 System.out.printf("Произведение чисел равно: %.2f", d);
                 break;
+            default:
+                System.out.println("Вы ввели неверный символ операции, перезапустите программу и попробуйте снова.");
         }
     }
 }

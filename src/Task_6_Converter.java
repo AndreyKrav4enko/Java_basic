@@ -39,7 +39,7 @@ public class Task_6_Converter {
                 case 1:
                     System.out.println("Введите количество выбранных единиц:");
                     double c = in.nextInt();
-                    System.out.printf("Метр: %.3f\nМиля: %.3f\nЯрд: %.3f\nФут: %.3f\n", c, c * 0.000621371, c * 1.9361, c * 3.28084);
+                    System.out.printf("Метр: %.3f\nМиля: %.3f\nЯрд: %.3f\nФут: %.3f\n", c, c * 0.000621371, c * 1.09361, c * 3.28084);
                     break;
                 case 2:
                     System.out.println("Введите количество выбранных единиц:");
