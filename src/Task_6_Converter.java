@@ -6,60 +6,64 @@ public class Task_6_Converter {
         Scanner in = new Scanner(System.in);
 
         System.out.println("Выберите что переводить: 1 - масса, 2 - расстояние");
-        int a = in.nextInt();
-        if (a == 1) {
+        int value = in.nextInt();
+        if (value == 1) {
             System.out.println("Выберите единицу измерения: 1 - кг, 2 - фунт, 3 - унция, 4 - центнер");
-            int b = in.nextInt();
-            switch (b) {
+            int mass = in.nextInt();
+            switch (mass) {
                 case 1:
                     System.out.println("Введите количество выбранных единиц:");
-                    double c = in.nextInt();
-                    System.out.printf("Килограммы: %.3f\nФунты: %.3f\nУнция: %.3f\nЦентнер: %.3f\n", c, c * 2.20462, c * 35.274, c * 0.01);
+                    double kg = in.nextInt();
+                    System.out.printf("Килограммы: %.3f\nФунты: %.3f\nУнция: %.3f\nЦентнер: %.3f\n", kg, kg * 2.20462, kg * 35.274, kg * 0.01);
                     break;
                 case 2:
                     System.out.println("Введите количество выбранных единиц:");
-                    double d = in.nextInt();
-                    System.out.printf("Фунты: %.3f\nКилограммы: %.3f\nУнция: %.3f\nЦентнер: %.3f\n", d, d * 0.453, d * 16, d * 0.00453);
+                    double pound = in.nextInt();
+                    System.out.printf("Фунты: %.3f\nКилограммы: %.3f\nУнция: %.3f\nЦентнер: %.3f\n", pound, pound * 0.453, pound * 16, pound * 0.00453);
                     break;
                 case 3:
                     System.out.println("Введите количество выбранных единиц:");
-                    double e = in.nextInt();
-                    System.out.printf("Унция: %.3f\nКилограммы: %.3f\nФунты: %.3f\nЦентнер: %.3f\n", e, e * 0.0283495, e * 0.0625, e * 0.000283495);
+                    double ounce = in.nextInt();
+                    System.out.printf("Унция: %.3f\nКилограммы: %.3f\nФунты: %.3f\nЦентнер: %.3f\n", ounce, ounce * 0.0283495, ounce * 0.0625, ounce * 0.000283495);
                     break;
                 case 4:
                     System.out.println("Введите количество выбранных единиц:");
-                    double f = in.nextInt();
-                    System.out.printf("Центнер: %.3f\nКилограммы: %.3f\nФунты: %.3f\nУнция: %.3f\n", f, f * 100, f * 220.462, f * 3527,4);
+                    double hundredweight = in.nextInt();
+                    System.out.printf("Центнер: %.3f\nКилограммы: %.3f\nФунты: %.3f\nУнция: %.3f\n", hundredweight, hundredweight * 100, hundredweight * 220.462, hundredweight * 3527,4);
                     break;
+                default:
+                    System.out.println("Вы ввели неверное число, перезапустите программу и попробуйте снова.");
             }
-        } else if (a == 2) {
+        } else if (value == 2) {
             System.out.println("Выберите единицу измерения: 1 - Метр, 2 - Миля, 3 - Ярд, 4 - Фут");
-            int b = in.nextInt();
-            switch (b) {
+            int range = in.nextInt();
+            switch (range) {
                 case 1:
                     System.out.println("Введите количество выбранных единиц:");
-                    double c = in.nextInt();
-                    System.out.printf("Метр: %.3f\nМиля: %.3f\nЯрд: %.3f\nФут: %.3f\n", c, c * 0.000621371, c * 1.09361, c * 3.28084);
+                    double meter = in.nextInt();
+                    System.out.printf("Метр: %.3f\nМиля: %.3f\nЯрд: %.3f\nФут: %.3f\n", meter, meter * 0.000621371, meter * 1.09361, meter * 3.28084);
                     break;
                 case 2:
                     System.out.println("Введите количество выбранных единиц:");
-                    double d = in.nextInt();
-                    System.out.printf("Миля: %.3f\nМетр: %.3f\nЯрд: %.3f\nФут: %.3f\n", d, d * 1609.4, d * 1760, d * 5280);
+                    double mile = in.nextInt();
+                    System.out.printf("Миля: %.3f\nМетр: %.3f\nЯрд: %.3f\nФут: %.3f\n", mile, mile * 1609.4, mile * 1760, mile * 5280);
                     break;
                 case 3:
                     System.out.println("Введите количество выбранных единиц:");
-                    double e = in.nextInt();
-                    System.out.printf("Ярд: %.3f\nМетр: %.3f\nМиля: %.3f\nФут: %.3f\n", e, e * 0.9144, e * 0.000568182, e * 3);
+                    double yard = in.nextInt();
+                    System.out.printf("Ярд: %.3f\nМетр: %.3f\nМиля: %.3f\nФут: %.3f\n", yard, yard * 0.9144, yard * 0.000568182, yard * 3);
                     break;
                 case 4:
                     System.out.println("Введите количество выбранных единиц:");
-                    double f = in.nextInt();
-                    System.out.printf("Фут: %.3f\nМетр: %.3f\nМиля: %.3f\nЯрд: %.3f\n", f, f * 0.3048, f * 0.000189394, f * 0.333333);
+                    double foot = in.nextInt();
+                    System.out.printf("Фут: %.3f\nМетр: %.3f\nМиля: %.3f\nЯрд: %.3f\n", foot, foot * 0.3048, foot * 0.000189394, foot * 0.333333);
                     break;
+                default:
+                    System.out.println("Вы ввели неверное число, перезапустите программу и попробуйте снова.");
             }
         }
         else {
-            System.out.println("Вы ввели неверное число, перезапустите программу!");
+            System.out.println("Вы ввели неверное число, перезапустите программу и попробуйте снова.");
         }
     }
 }
