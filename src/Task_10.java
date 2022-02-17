@@ -32,11 +32,9 @@ public class Task_10 {
             System.out.println();
         }
         System.out.println("Первая строка матрицы: ");
-        for (int i = 0; i < a; i--) {
             for (int j = 0; j < b; j++) {
-                array[i][j] *= 3;
-                System.out.print(array[i][j] + " ");
-            }
+                array[0][j] *= 3;
+                System.out.print(array[0][j] + " ");
         }
     }
 }
