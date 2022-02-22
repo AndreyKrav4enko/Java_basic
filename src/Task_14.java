@@ -8,7 +8,7 @@ public class Task_14 {
         Random random = new Random();
         int [] array = new int [15];
             for(int i = 0; i < 15; i++){
-                array[i] = random.nextInt(-20,20);
+                array[i] = (int) Math.round((Math.random() * 41) - 20);
                 System.out.println(array[i] + " ");
                 if (array[i] > max){
                     max = array[i];
